@@ -3,7 +3,8 @@
 This is the [master](https://github.com/johnbarkley/mockupp/tree/master) branch containing the app source code. The [gh-pages](https://github.com/johnbarkley/mockupp/tree/gh-pages) branch contains the app itself which is available live [here.](https://johnbarkley.github.io/mockupp)
 
 ## About Mockupp
-Mockupp is a tool built with React for creating browser-style mockups for presentations and portfolios. You upload your design and can customize the browser appearance and background. The app is in its early stages of development - I'm aware that there are bugs that exist and I'm currently working on fixing them as well as adding new features.<br>
+Mockupp is a tool built with React for creating browser-style mockups for presentations and portfolios. You upload your design and can customize the browser appearance and background. The app is in its early stages of development - I'm aware that there are bugs that exist and I'm currently working on fixing them as well as adding new features.
+
 Features include:
 - Upload design image (PNG, JPG, GIF, or SVG)
 - Customize browser:
