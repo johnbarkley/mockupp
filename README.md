@@ -1,4 +1,4 @@
-[Click here to launch Mockupp.](https://johnbarkley.github.io/mockupp)
+[Click here to launch Mockupp.](https://johnbarkley.github.io/mockupp){:target="_blank"}
 
 This is the master branch containing the app source code. The gh-pages branch contains the app itself which is available [here.](https://johnbarkley.github.io/mockupp)
 
