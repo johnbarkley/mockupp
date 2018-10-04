@@ -21,14 +21,12 @@ Features include:
 
 ## Coming soon
 - Full site located at [mockupp.io](https://mockupp.io)
-    - React SPA including landing page with samples
 - Additional features:
     - Chrome-style nav bar option in addition to the current Safari-style default
     - Two-color split backgrounds
     - Show/hide:
         - Entire nav bar
         - Three browser nav buttons
-    - Resize browser mockup as resizes window (more of a bug fix than a new feature!)
     - Other features that I’d like to add in the future:
         - Upload Figma & Sketch files
         - Drag and drop file upload
