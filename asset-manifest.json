@@ -1,8 +1,15 @@
 {
-  "main.css": "static/css/main.bc0aad7e.css",
-  "main.css.map": "static/css/main.bc0aad7e.css.map",
-  "main.js": "static/js/main.6e17ebb3.js",
-  "main.js.map": "static/js/main.6e17ebb3.js.map",
+  "main.css": "static/css/main.a001a81b.css",
+  "main.css.map": "static/css/main.a001a81b.css.map",
+  "main.js": "static/js/main.9d49709e.js",
+  "main.js.map": "static/js/main.9d49709e.js.map",
+  "static/media/check.svg": "static/media/check.0046eaeb.svg",
   "static/media/colorButtons.svg": "static/media/colorButtons.ca318e1a.svg",
-  "static/media/grayButtons.svg": "static/media/grayButtons.7febd0ed.svg"
+  "static/media/cool-background.png": "static/media/cool-background.7d8f2185.png",
+  "static/media/grayButtons.svg": "static/media/grayButtons.7febd0ed.svg",
+  "static/media/port.png": "static/media/port.dce21001.png",
+  "static/media/primer.png": "static/media/primer.d3e06457.png",
+  "static/media/rectangles.svg": "static/media/rectangles.abf012f6.svg",
+  "static/media/savee.png": "static/media/savee.8ad668da.png",
+  "static/media/throww.png": "static/media/throww.59397d6a.png"
 }
