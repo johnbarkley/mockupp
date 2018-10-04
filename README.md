@@ -32,3 +32,5 @@ Features include:
         - Drag and drop file upload
         - Other built-in background styles, including integrating third-party tools (gradients, etc.)
         - Upload a larger image, such as a full-length page of a site, and allow for scrolling
+
+_Credit to GitHub for the third example on the landing page (primer.style) and Savee for the fourth (savee.it). I thought they were both really nice designs and wanted to use them as examples after my two own._
