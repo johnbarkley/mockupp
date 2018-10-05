@@ -33,8 +33,4 @@ Features include:
         - Other built-in background styles, including integrating third-party tools (gradients, etc.)
         - Upload a larger image, such as a full-length page of a site, and allow for scrolling
 
-<<<<<<< HEAD
 _Credit to GitHub for the third example on the landing page ([primer.style](https://primer.style)) and Savee for the fourth ([savee.it](https://savee.it)). I thought they were both really nice designs and wanted to use them as examples after my two own ([Throww](https://github.com/johnbarkley/throww) and my [portfolio site](http://johngbarkley.com))._
-=======
-_Credit to GitHub for the third example on the landing page (primer.style) and Savee for the fourth (savee.it). I thought they were both really nice designs and wanted to use them as examples after my two own._
->>>>>>> f6aa1fa97aeeaf572ba1ead25e0acadb087e3eea
