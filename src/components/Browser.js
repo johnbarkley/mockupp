@@ -23,19 +23,49 @@ const Browser = props => {
 
     const width = props.imageWidth
     const height = props.imageHeight
-    let imgHeight
+    let bHeight
     if(width && height) {
         const ele = document.getElementsByClassName('browser')[0]
         const ratio = width/ele.clientWidth
-        imgHeight = height/ratio + 28
-        ele.style.height = imgHeight + 'px'
+        bHeight = height/ratio + 28
+        bHeight = bHeight / window.innerWidth * 100
     }
 
-    let browstyle
-    if(dropShadow) {
+    let browstyle, exampleId
+    if (props.example) {
+        switch(props.id) {
+            case 'browserOne':
+                exampleId = '50%'
+                break
+            case 'browserTwo':
+                exampleId = '150%'
+                break
+            case 'browserThree':
+                exampleId = '250%'
+                break
+            case 'browserFour':
+                exampleId = '350%'
+                break
+            default:
+                break
+        }
+        browstyle = {
+            width: '82%',
+            height: '41.2vw',
+            zIndex: '1000',
+            userSelect: 'none',
+            boxShadow: '10px 10px 60px rgba(0, 0, 0, 0.25)',
+            borderRadius: '5px 5px 0px 0px',
+            position: 'absolute',
+            bottom: 100,
+            left: exampleId,
+            transform: 'translateX(-50%)'
+        }
+    }
+    else if(dropShadow) {
         browstyle = {
             width: '73%',
-            height: imgHeight,
+            height: bHeight + 'vw',
             zIndex: '100',
             userSelect: 'none',
             boxShadow: '10px 10px 60px rgba(0, 0, 0, 0.25)',
@@ -45,7 +75,7 @@ const Browser = props => {
     else {
         browstyle = {
             width: '73%',
-            height: imgHeight,
+            height: bHeight + 'vw',
             zIndex: '100',
             userSelect: 'none',
             borderRadius: '5px 5px 0px 0px'
@@ -54,7 +84,8 @@ const Browser = props => {
 
     return (
         <div className='browser'
-        style={browstyle}>
+        style={browstyle}
+        id={props.id}>
             <BrowserHeader url={props.url}
             buttonColor={props.buttonColor} />
             {image}

@@ -4,12 +4,11 @@ html, body {
     width: 100vw;
     height: 100vh;
 }
-
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
-
 .container {
     width: 100vw;
     height: 100vh;
@@ -20,7 +19,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
 .background {
     width: 100vw;
     height: 100vh;
@@ -29,7 +27,6 @@ body {
     left: 0;
     z-index: 1;
 }
-
 .browser-nav {
     width: 100%;
     height: 30px;
@@ -67,7 +64,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
-
 .form-button {
      -webkit-appearance: none;
      -moz-appearance: none;
@@ -107,11 +103,9 @@ body {
      display: inline-block;
      user-select: none;
 }
-
 *:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
     background-color: #fff;
 }
-
 .step-menu {
     width: 380px;
     position: absolute;
@@ -191,13 +185,11 @@ body {
     line-height: 28px;
     vertical-align: middle;
 }
-
 .checkbox, .radio {
     color: #333;
     margin: 5px 0 5px 37px;
     user-select: none;
 }
-
 .bg-step {
     width: 80%;
     margin: 0 auto;
@@ -277,7 +269,6 @@ body {
     left: 130px;
     top: -150px;
 }
-
 .checkmark {
     width: 13px;
     height: 9px;
@@ -316,8 +307,6 @@ body {
 .url:focus {
     outline: none;
 }
-
-
 .download {
     width: 190px;
     height: 44px;
@@ -361,7 +350,229 @@ body {
 .fullscreen:focus {
     outline: none;
 }
-
 input {
     font-family: 'Overpass Mono', monospace;
+}
+.landing {
+    width: 100vw;
+    height: 1275px;
+    background-color: #F5F8FC;
+    font-family: 'Overpass Mono', monospace;
+    position: relative;
+}
+.landing nav {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.landing nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -.5px;
+    transition: color .2s ease;
+    line-height: 60px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0;
+}
+#mockupp {
+    justify-self: start;
+    margin: 0 0 0 20px;
+}
+#me {
+    justify-self: end;
+    margin: 0 20px 0 0;
+}
+.landing nav a:hover {
+    color: #690EFF;
+}
+.title {
+    width: 70%;
+    margin:30px auto 0 auto;
+    text-align: center;
+}
+.title h1 {
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: 400;
+    color: #690EFF;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 0;
+}
+.title h1 span {
+    display: block;
+}
+.checks {
+    margin: 45px 0 0 0;
+}
+.feature-check {
+    width: 90%;
+    height: 27px;
+    margin: 20px auto;
+}
+.feature-check img {
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+}
+.feature-check p {
+    font-size: 18px;
+    color: #333;
+    letter-spacing: -.5px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 0 0 10px;
+    padding: 0;
+    line-height: 22px;
+}
+.get-started {
+    width: 242px;
+    height: 60px;
+    background-color: #690EFF;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    margin: 25px 0 0 0;
+    padding: 0;
+    font-family: 'Overpass Mono';
+    font-weight: 400;
+    display: inline-block;
+    cursor: pointer;
+}
+.get-started:hover {
+    background-color: #873DFF;
+}
+.get-started:focus {
+    outline: none;
+}
+.solid-color {
+    width: 100%;
+    height: 44.6vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    transition: left 1s ease;
+}
+#colorOne {
+    left: 0;
+    background-color: #690EFF;
+}
+#colorTwo {
+    left: 100%;
+    background-image: url('./assets/rectangles.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#colorThree {
+    left: 200%;
+    background-image: url('./assets/cool-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#colorFour {
+    left: 300%;
+    background-color: #f4104f;
+}
+#browserOne, #browserTwo, #browserThree, #browserFour {
+    transition: left 1s ease;
+}
+@media screen and (max-width: 1300px) {
+    .landing {
+        height: 1210px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .landing {
+        height: 1150px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .landing {
+        height: 1100px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .landing {
+        height: 1030px;
+    }
+}
+@media screen and (max-width: 765px) {
+    .landing {
+        height: 960px;
+    }
+    .title h1 {
+        font-size: 24px;
+    }
+    .title h1 span {
+        display: inline-block;
+    }
+    .checks {
+        margin-top: 15px;
+    }
+    .feature-check {
+        height: 20px;
+    }
+    .feature-check p {
+        font-size: 14px;
+    }
+    .feature-check img {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 2px;
+    }
+    .get-started {
+        width: 180px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 615px) {
+    .landing {
+        height: 830px;
+    }
+    .title h1 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .feature-check {
+        height: 17px;
+    }
+    .feature-check p {
+        font-size: 12px;
+    }
+    .feature-check img {
+        width: 17px;
+        height: 17px;
+        margin-bottom: 2px;
+    }
+    .get-started {
+        width: 180px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .landing {
+        height: 870px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .landing {
+        height: 720px;
+    }
+    .title {
+        width: 95%;
+    }
 }
